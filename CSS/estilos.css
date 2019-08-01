@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); /*se saca de google fonts*/
+@import url(menu.css); /*importa el estilo css de hoja menu, para facilitar modificaciones en menu*/
+@import url(banner.css);
+@import url(blog.css);
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;    /*para que paddin o border sea adentro del mismo modelo de caja y no salga*/ 
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F5F5F5;
+    
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #333;
+    color: #fff;
+    padding-top: 6px; 
+    position: fixed; /*el menú no desaparece de la parte superior al bajar por la página*/
+    top: 0;
+    left: 0;
+    z-index: 100; /* para que el header pase por sobre de los demás elementos*/
+    
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+    
+}
+
+h1{
+    float:left;
+    font-size: 23px; 
+    margin-top:4px;
+}
+
+header .contenedor {
+    display: table;
+    
+}
+       
+    
+}
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+    margin: 40;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+.copy { 
+    font-size: 15px;
+    
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px; 
+    }
+
+.sociales a {
+    color: #333;
+    text-decoration: none; /*quitar color por defecto de botones o elemntos subrayados que funcionan como botones o links*/
+}
+
+@media (min-width:768px) {
+    .sociales {
+        width:auto;
+}
+
+    header .contenedor h1 {
+        font-size: 30px; 
+    }    
+    
+footer .contenedor {
+    justify-content: space-between;
+    margin-top: 40px;
+}
+        
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+
+
